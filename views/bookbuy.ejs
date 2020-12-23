@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <title>BOOKSHARE</title>
+        <link rel="stylesheet" href="/bootstrap.css">
+        <link rel="stylesheet" href="/bookbuy.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="back navbar navbar-light navbar-expand-md sticky-top">
+            <div class="container">
+                <i class="fas fa-book-open mr-2"></i>
+                <a class="navbar-brand" href="/">BOOKSHARE</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#this">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="this">
+                    <ul class="navbar-nav mr-2">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%= username %>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/profile">Profile</a>
+                                <a class="dropdown-item" href="/logout">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/mybooks">My Books</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">BOOKS</h1>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+        <section class="module parallax parallax-1" data-type="background" data-speed="10">
+            <div class="parallax-container">
+            </div>
+        </section>
+
+        <section  class="module content">
+            <div class="parallax-container">
+                <h2></h2>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="module parallax parallax-2 pt-5" data-type="background" data-speed="10">
+            <div class="w-75 m-auto">
+                <!-- <form style="margin-bottom:100px; margin-top:100px;" class="form-group" action="index.html" method="post"> -->
+                <div class="container d-flex w-75 my-5">
+                    <!-- <input id="search" class="form-control form-control-lg" type="text" name="search" placeholder="Search your book..." autocomplete="off"> -->
+                    <input id="search" type="text" class="searchTerm" placeholder="What are you looking for? You can search by title, author, course, branch or semester" autocomplete="off">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <!-- </form> -->
+                <div class="d-flex flex-wrap floa justify-content-start">
+                    <!-- <div class="card m-4 w18rem">
+                        <img src="https://codex.cs.yale.edu/avi/os-book/images/os9c-cover.jpg" class="card-img-top h350px" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Operating System Concepts</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Peter Baer Galvin</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Operating System</li>
+                            <li class="list-group-item">2nd year : 4th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div>
+                    <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div>
+                    <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div>
+                    <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div>
+                    <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div>
+                    <div class="card m-4" style="width: 18rem;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41Gk3Y1xhdL._AC_UL600_SR534,600_.jpg" height="350px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Introduction to Algorithms</strong></h5>
+                            <p class="card-text"><cite style="font-size:0.8em;">- Thomas H. Cormen</cite></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Design and Analysis of Algorithms</li>
+                            <li class="list-group-item">3rd year : 5th sem</li>
+                            <li class="list-group-item">CSE / IT / CCE</li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="togg prom" style="margin-top:50px; text-align:center; font-size:2em;">
+                    Sorry, there are no books to display!
+                </div>
+            </div>
+        </section>
+
+        <footer class="page-footer font-small special-color-dark pt-4">
+            <div class="container">
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://facebook.com" class="btn-floating btn-fb mx-1">
+                            <i class="fab fa-facebook-f"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com" class="btn-floating btn-tw mx-1">
+                            <i class="fab fa-twitter"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://myaccount.google.com" class="btn-floating btn-gplus mx-1">
+                            <i class="fab fa-google-plus-g"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://linkedin.com" class="btn-floating btn-li mx-1">
+                            <i class="fab fa-linkedin-in"> </i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com" class="btn-floating btn-dribbble mx-1">
+                            <i class="fab fa-dribbble"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://jaipur.manipal.edu/"> MUJ@BOOKSHARE</a>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/bookbuy.js" charset="utf-8"></script>
+        <script src="https://kit.fontawesome.com/76d096c304.js" crossorigin="anonymous" asyc></script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    background-image: url("signback.jpg");
+}
+form{
+    background: white;
+    text-align: center !important;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+::placeholder {
+  opacity: 0.7 !important;
+}
+button{
+    background-image: linear-gradient(to left,#74ebd5,#9face6);
+}
+h3{
+    background: rgb(182, 204, 247);
+}
+.remove{
+    color: red;
+}
