@@ -16,13 +16,15 @@ const path = require('path');
 const downloadsrouter=require('./routes/downloads');
 const profilerouter=require('./routes/profile');
 const mybooksrouter=require('./routes/mybooks');
+require('dotenv').config();
+
 
 const app=express();
 app.set("view engine","ejs");
 
 
 
-mongoose.connect('Insert credentials to access database here', {
+mongoose.connect(process.env.key, {
 	useNewUrlParser: true,
 	useCreateIndex: true,
     useUnifiedTopology: true

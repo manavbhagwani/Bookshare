@@ -53,19 +53,31 @@
             </div>
         </nav>
         <div class="mt-5 container">
-            <div class="jumbotron d-flex m-0 p-0 justify-content-end align-items-center">
+            <div class="jumbotron d-flex m-0 p-0 justify-content-end">
                 <div class="col-8 p-0">
-                    <img class="img-fluid w-100" src="https://www.bookshare.org/cms/sites/default/files/styles/panopoly_image_original/public/images/media/hero_image_homepage_3.png?itok=4aIvoJsT" alt="University">
+                    <img class="img-fluid w-100" src="hero_image_homepage_3.png" alt="University">
+                    <div class="d-flex flex-column align-items-center mt-5 pt-5">
+                        <div class="news-app-promo__section news-app-promo-text">
+                            <div class="news-app-promo-text__tagline">The best way to get books on the go</div><br>
+                            <div class="news-app-promo-text__download">Download the App now</div>
+                        </div>
+                        <div class="mt-5">
+                            <a href="https://drive.google.com/file/d/11UvDLw6Lrk6gBbk5rxh9VcYgEwJ8jJd9/view?usp=sharing"><img style="background-image: linear-gradient(to left,#74ebd5,#9face6);" class="gs mr-2 img-fluid w-25" src="gs.svg" alt="playstore"></a>
+                            <a href="https://drive.google.com/file/d/11UvDLw6Lrk6gBbk5rxh9VcYgEwJ8jJd9/view?usp=sharing"><img style="background-image: linear-gradient(to left,#FF0000,#9face6);" class="as img-fluid w-25" src="as.svg" alt="app store"></a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod -->
+                    <img class="img-fluid w-100" src="a.png" alt="University">
                 </div>
             </div>
         </div>
         <div class="container mt-5">
             <h3 class="center">ABOUT</h3>
             <p class="center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            We’re one of the easiest ways to get sell books online. Your collection might need cutting down and curating even if you still love physical books. You might want to add a few to your collection. Whatever be your reason, Bookshare is here to make it as easy as possible.
+            </p>
             <br>
             <hr class="style-two">
         </div>
@@ -77,7 +89,8 @@
                 <img src="Screenshot from 2020-11-06 18-47-48.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">GET BOOKS</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    <p class="card-text">Access the largest library of textbooks, bestsellers, competitive-exams and reference books, career resources, and more. Chat with seller and negotiate!</p>
+                    <br />
                     <% var bookbuy = username +"/"+"bookbuy" %>
                     <a href=<%=bookbuy%> class="btn btn-primary">EXAM TIME</a>
                 </div>
@@ -86,7 +99,8 @@
                 <img src="Screenshot from 2020-11-06 19-44-21.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">SELL BOOKS</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+                    <p class="card-text">Want to trade in your old books for some extra cash? Just enter your book's information into our system and voila! Some buyer will contact you soon.</p>
+                    <br />
                     <% var booksell = username +"/"+"booksell" %>
                     <a href=<%=booksell%> class="btn btn-primary">ITS BUSINESS</a>
                 </div>
