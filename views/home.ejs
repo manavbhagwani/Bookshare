@@ -76,7 +76,7 @@
         <div class="container mt-5">
             <h3 class="center">ABOUT</h3>
             <p class="center">
-            We’re one of the easiest ways to get sell books online. Your collection might need cutting down and curating even if you still love physical books. You might want to add a few to your collection. Whatever be your reason, Bookshare is here to make it as easy as possible.
+            We’re one of the easiest way to get sell books online. Your collection might need cutting down and curating even if you still love physical books. You might want to add a few to your collection. Whatever be your reason, Bookshare is here to make it as easy as possible.
             </p>
             <br>
             <hr class="style-two">
@@ -91,7 +91,7 @@
                     <h5 class="card-title">GET BOOKS</h5>
                     <p class="card-text">Access the largest library of textbooks, bestsellers, competitive-exams and reference books, career resources, and more. Chat with seller and negotiate!</p>
                     <br />
-                    <% var bookbuy = username +"/"+"bookbuy" %>
+                    <% var bookbuy=username.replace(/ /g,'')+"/"+"bookbuy" %>
                     <a href=<%=bookbuy%> class="btn btn-primary">EXAM TIME</a>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     <h5 class="card-title">SELL BOOKS</h5>
                     <p class="card-text">Want to trade in your old books for some extra cash? Just enter your book's information into our system and voila! Some buyer will contact you soon.</p>
                     <br />
-                    <% var booksell = username +"/"+"booksell" %>
+                    <% var booksell=username.replace(/ /g,'')+"/"+"booksell" %>
                     <a href=<%=booksell%> class="btn btn-primary">ITS BUSINESS</a>
                 </div>
             </div>

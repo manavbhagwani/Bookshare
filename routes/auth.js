@@ -20,6 +20,9 @@ module.exports=(function(req,res,next){
                 return;
             }
         }
-        next();
+        if(decode.username.replace(/ /g,'')!=req.params.user)
+            res.sendStatus(404);
+        else
+            next();
     }
 })
